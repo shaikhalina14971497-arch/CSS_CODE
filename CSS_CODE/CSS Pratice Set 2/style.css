@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 16px 24px;
+	background-color: yellow;
+}
+
+.navbar a {
+	color: #111;
+	text-decoration: none;
+}
+
+.navbar .amazon-link {
+	display: flex;
+}
+
+.amazon-link img {
+	width: 110px;
+	height: auto;
+}
+
+.search-form {
+	display: flex;
+	margin-left: auto;
+}
+
+.search-form input {
+	padding: 8px;
+	border: none;
+}
+
+.search-form button {
+	padding: 8px 12px;
+	border: none;
+	background-color: #f0c14b;
+	cursor: pointer;
+}

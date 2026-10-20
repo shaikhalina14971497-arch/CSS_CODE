@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML & CSS Practice Sets 1 & 2</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <style>
+        /* Practice Set 1 - Q3
+           Blue button using <style> tag
+        */
+        .blue-button {
+            background-color: blue;
+            color: white;
+        }
+
+
+      
+
+        .my-paragraph {
+            color: green;
+        }
+
+        #my-paragraph {
+            color: red;
+        }
+    </style>
+</head>
+
+
+<body>
+
+  
+    <header>
+        <p class="level">LEVEL 1</p>
+
+        <h1>
+            HTML & CSS Practice Sets
+        </h1>
+
+        <p class="subtitle">
+            Practice Set 1 + Practice Set 2
+        </p>
+    </header>
+
+    <section class="practice-section">
+
+        <div class="section-heading">
+            <span>SET 1</span>
+            <h2>Practice Set 1</h2>
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q1
+            </div>
+
+            <div class="question-content">
+
+                <h3>Div with ID "box"</h3>
+
+                <p>
+                    Create a simple div with an id "box".
+                    Add some text content inside the div.
+                    Set its background color to blue.
+                </p>
+
+                <!-- Solution -->
+                <div id="box">
+                    This is the Box div.
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="question">
+
+            <div class="question-number">
+                Q2
+            </div>
+
+            <div class="question-content">
+
+                <h3>Headings with Class "heading"</h3>
+
+                <p>
+                    Create 3 headings with h1, h2 & h3.
+                    Give them all a class "heading"
+                    and set their color to red.
+                </p>
+
+                <div class="demo-area">
+
+                    <h1 class="heading">
+                        Heading 1
+                    </h1>
+
+                    <h2 class="heading">
+                        Heading 2
+                    </h2>
+
+                    <h3 class="heading">
+                        Heading 3
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q3
+            </div>
+
+            <div class="question-content">
+
+                <h3>Three Ways of Applying CSS</h3>
+
+                <p>
+                    Create buttons with different background colors
+                    using external CSS, internal CSS and inline CSS.
+                </p>
+
+                <div class="button-container">
+
+                    <!-- External CSS -->
+                    <button class="green-button">
+                        Green - External CSS
+                    </button>
+
+
+                    <!-- Internal CSS -->
+                    <button class="blue-button">
+                        Blue - Internal CSS
+                    </button>
+
+
+                    <!-- Inline CSS -->
+                    <button
+                        style="background-color: pink; color: black;">
+                        Pink - Inline CSS
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q4
+            </div>
+
+            <div class="question-content">
+
+                <h3>Class vs ID</h3>
+
+                <p>
+                    Give a paragraph both a class and an id.
+                    Style each differently. Which style wins?
+                </p>
+
+                <div class="demo-area">
+
+                    <p
+                        class="my-paragraph"
+                        id="my-paragraph">
+
+                        This paragraph has both a class and an ID.
+                        The ID selector wins, so this text appears red.
+
+                    </p>
+
+                </div>
+
+                <div class="result">
+                    Result: <strong>ID selector wins</strong>
+                    because it has higher specificity than a class.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q5
+            </div>
+
+            <div class="question-content">
+
+                <h3>Universal Selector</h3>
+
+                <p>
+                    Add the universal selector (*) to reset
+                    the color to blue.
+                </p>
+
+                <div class="demo-area">
+
+                    <div class="q5-box">
+                        This text is blue because of the
+                        universal selector.
+                    </div>
+
+                    <p class="q5-text">
+                        This paragraph is also affected by
+                        the universal selector.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="practice-section">
+
+        <div class="section-heading">
+            <span>SET 2</span>
+            <h2>Practice Set 2</h2>
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q1
+            </div>
+
+            <div class="question-content">
+
+                <h3>
+                    Centered & Capitalized Heading
+                </h3>
+
+                <p>
+                    Create a heading centered on the page
+                    with all of its text capitalized.
+                </p>
+
+                <div class="demo-area">
+
+                    <h2 class="center-heading">
+                        this heading is centered
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q2
+            </div>
+
+            <div class="question-content">
+
+                <h3>
+                    Monospace Font
+                </h3>
+
+                <p>
+                    Set the font family of all the content
+                    in the document to "Monospace".
+                </p>
+
+                <div class="demo-area">
+
+                    <p class="monospace-demo">
+                        This text uses the Monospace font family.
+                    </p>
+
+                    <p class="code-text">
+                        Hello World 12345 { HTML + CSS }
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q3
+            </div>
+
+            <div class="question-content">
+
+                <h3>
+                    Nested Divs
+                </h3>
+
+                <p>
+                    Create one div inside another div.
+                    Set the IDs to "outer" and "inner".
+                    Set outer text size to 25px and inner
+                    text size to 10px.
+                </p>
+
+
+                <div class="demo-area">
+
+                    <!-- Outer Div -->
+                    <div id="outer">
+
+                        Outer Div - 25px
+
+                        <!-- Inner Div -->
+                        <div id="inner">
+
+                            Inner Div - 10px
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q4
+            </div>
+
+            <div class="question-content">
+
+                <h3>
+                    Hyperlink Without Underline
+                </h3>
+
+                <p>
+                    Add a hyperlink on the word "Google"
+                    that links to google.com and remove
+                    its underline.
+                </p>
+
+                <div class="demo-area">
+
+                    <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        class="google-link">
+
+                        Google
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="question">
+
+            <div class="question-number">
+                Q5
+            </div>
+
+            <div class="question-content">
+
+                <h3>
+                    Line Height Comparison
+                </h3>
+
+                <p>
+                    Create 3 paragraphs with line-height
+                    values 1, 1.5 and 2.
+                </p>
+
+
+                <div class="line-height-container">
+
+                    <div class="line-box">
+
+                        <h4>
+                            Line-height: 1
+                        </h4>
+
+                        <p class="line-height-1">
+                            This is a paragraph with line-height
+                            set to 1. The lines are very close
+                            together and provide less spacing
+                            between each line of text.
+                        </p>
+
+                    </div>
+
+
+                    <div class="line-box">
+
+                        <h4>
+                            Line-height: 1.5
+                        </h4>
+
+                        <p class="line-height-15">
+                            This is a paragraph with line-height
+                            set to 1.5. The lines have more
+                            comfortable spacing and are easier
+                            to read.
+                        </p>
+
+                    </div>
+
+
+                    <div class="line-box">
+
+                        <h4>
+                            Line-height: 2
+                        </h4>
+
+                        <p class="line-height-2">
+                            This is a paragraph with line-height
+                            set to 2. The lines have significantly
+                            more space between them.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+
+        <p>
+            HTML & CSS Practice Sets 1 & 2
+        </p>
+
+        <p>
+            Level 1 • Completed
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

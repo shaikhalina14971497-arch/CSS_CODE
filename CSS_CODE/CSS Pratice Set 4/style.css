@@ -1,0 +1,608 @@
+/* ===================================================== */
+/* GLOBAL / UNIVERSAL SELECTOR                           */
+/* Practice Set 1 - Q5                                  */
+/* ===================================================== */
+
+* {
+    color: blue;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===================================================== */
+/* BODY                                                  */
+/* Practice Set 2 - Q2                                  */
+/* Set font family of all document content to Monospace */
+/* ===================================================== */
+
+body {
+    font-family: monospace;
+
+    background-color: #0d1b2e;
+
+    min-height: 100vh;
+
+    padding: 50px;
+
+    line-height: 1.5;
+}
+
+
+/* ===================================================== */
+/* HEADER                                                */
+/* ===================================================== */
+
+header {
+    max-width: 1200px;
+
+    margin: 0 auto 50px auto;
+
+    padding: 20px;
+}
+
+
+.level {
+    color: #ffd166;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    color: white;
+
+    font-size: 48px;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #aebdd2;
+
+    font-size: 18px;
+}
+
+
+/* ===================================================== */
+/* PRACTICE SECTION                                      */
+/* ===================================================== */
+
+.practice-section {
+    max-width: 1200px;
+
+    margin: 0 auto 60px auto;
+}
+
+
+/* ===================================================== */
+/* SECTION HEADING                                       */
+/* ===================================================== */
+
+.section-heading {
+    margin-bottom: 25px;
+
+    padding-left: 5px;
+}
+
+
+.section-heading span {
+    color: #ffd166;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+.section-heading h2 {
+    color: white;
+
+    font-size: 32px;
+
+    margin-top: 8px;
+}
+
+
+/* ===================================================== */
+/* QUESTION CARD                                         */
+/* ===================================================== */
+
+.question {
+    display: flex;
+
+    gap: 25px;
+
+    background-color: #172a44;
+
+    border: 1px solid #25466d;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    transition: transform 0.2s ease,
+                border-color 0.2s ease;
+}
+
+
+.question:hover {
+    transform: translateY(-3px);
+
+    border-color: #377dff;
+}
+
+
+/* ===================================================== */
+/* QUESTION NUMBER                                       */
+/* ===================================================== */
+
+.question-number {
+    flex-shrink: 0;
+
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #2868ed;
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* ===================================================== */
+/* QUESTION CONTENT                                      */
+/* ===================================================== */
+
+.question-content {
+    flex: 1;
+}
+
+
+.question-content h3 {
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.question-content > p {
+    color: #b8c7dc;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ===================================================== */
+/* DEMO AREA                                             */
+/* ===================================================== */
+
+.demo-area {
+    background-color: #0d1b2e;
+
+    border: 1px solid #274568;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    margin-top: 15px;
+}
+
+
+/* ===================================================== */
+/* Q1 - ID SELECTOR                                     */
+/* ===================================================== */
+
+#box {
+    background-color: blue;
+
+    color: white;
+
+    padding: 20px;
+
+    width: 300px;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+}
+
+
+/* ===================================================== */
+/* Q2 - CLASS SELECTOR                                  */
+/* ===================================================== */
+
+.heading {
+    color: red;
+
+    margin-bottom: 8px;
+}
+
+
+/* ===================================================== */
+/* Q3 - EXTERNAL CSS BUTTON                             */
+/* ===================================================== */
+
+.green-button {
+    background-color: green;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+/* ===================================================== */
+/* Q3 - BUTTON CONTAINER                                */
+/* ===================================================== */
+
+.button-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+/* ===================================================== */
+/* Q4 - CLASS VS ID                                     */
+/* ===================================================== */
+
+.my-paragraph {
+    color: green;
+}
+
+
+/*
+    ID selector is more specific than
+    class selector.
+
+    Therefore, the paragraph becomes red.
+*/
+
+#my-paragraph {
+    color: red;
+}
+
+
+.result {
+    margin-top: 15px;
+
+    padding: 12px;
+
+    background-color: #10243d;
+
+    border-radius: 6px;
+
+    color: #aebdd2;
+}
+
+
+.result strong {
+    color: white;
+}
+
+
+/* ===================================================== */
+/* Q5 - UNIVERSAL SELECTOR                              */
+/* ===================================================== */
+
+/*
+    The universal selector is:
+
+    * {
+        color: blue;
+    }
+
+    It applies blue as the default color.
+
+    More specific selectors can override it.
+*/
+
+.q5-box {
+    padding: 15px;
+
+    border: 1px solid #315579;
+
+    border-radius: 6px;
+
+    margin-bottom: 10px;
+}
+
+
+.q5-text {
+    color: blue;
+
+    margin-top: 10px;
+}
+
+
+/* ===================================================== */
+/* PRACTICE SET 2 - Q1                                  */
+/* Center heading + uppercase                          */
+/* ===================================================== */
+
+.center-heading {
+    text-align: center;
+
+    text-transform: uppercase;
+
+    color: white;
+
+    font-size: 28px;
+}
+
+
+/* ===================================================== */
+/* PRACTICE SET 2 - Q2                                  */
+/* MONOSPACE FONT                                       */
+/* ===================================================== */
+
+.monospace-demo {
+    font-family: monospace;
+
+    color: white;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.code-text {
+    font-family: monospace;
+
+    background-color: #081321;
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    color: #9db8d8;
+}
+
+
+/* ===================================================== */
+/* PRACTICE SET 2 - Q3                                  */
+/* NESTED DIVS                                          */
+/* ===================================================== */
+
+#outer {
+    font-size: 25px;
+
+    color: white;
+
+    background-color: #1d4166;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    border: 2px solid #377dff;
+}
+
+
+#inner {
+    font-size: 10px;
+
+    color: white;
+
+    background-color: #315f8c;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border-radius: 5px;
+}
+
+
+/* ===================================================== */
+/* PRACTICE SET 2 - Q4                                  */
+/* GOOGLE HYPERLINK                                     */
+/* ===================================================== */
+
+.google-link {
+    text-decoration: none;
+
+    color: #4285f4;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.google-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ===================================================== */
+/* PRACTICE SET 2 - Q5                                  */
+/* LINE HEIGHT                                           */
+/* ===================================================== */
+
+.line-height-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.line-box {
+    background-color: #0d1b2e;
+
+    border: 1px solid #274568;
+
+    border-radius: 8px;
+
+    padding: 20px;
+}
+
+
+.line-box h4 {
+    color: white;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Line-height = 1 */
+
+.line-height-1 {
+    color: #b8c7dc;
+
+    line-height: 1;
+}
+
+
+/* Line-height = 1.5 */
+
+.line-height-15 {
+    color: #b8c7dc;
+
+    line-height: 1.5;
+}
+
+
+/* Line-height = 2 */
+
+.line-height-2 {
+    color: #b8c7dc;
+
+    line-height: 2;
+}
+
+
+/* ===================================================== */
+/* FOOTER                                                */
+/* ===================================================== */
+
+footer {
+    max-width: 1200px;
+
+    margin: 40px auto 0 auto;
+
+    padding: 25px;
+
+    border-top: 1px solid #294765;
+
+    text-align: center;
+}
+
+
+footer p {
+    color: #8fa5bd;
+
+    margin: 5px;
+}
+
+
+/* ===================================================== */
+/* RESPONSIVE DESIGN                                     */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+
+    header {
+        padding: 10px;
+
+        margin-bottom: 30px;
+    }
+
+
+    header h1 {
+        font-size: 34px;
+    }
+
+
+    .question {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    .question-number {
+        width: 50px;
+
+        height: 50px;
+    }
+
+
+    .button-container {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .button-container button {
+        width: 100%;
+    }
+
+
+    #box {
+        width: 100%;
+    }
+
+
+    #outer {
+        font-size: 25px;
+    }
+
+}

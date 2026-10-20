@@ -1,0 +1,54 @@
+html {
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.question {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.question h2 {
+    margin-top: 0;
+}
+
+.parent-box {
+    width: 400px;
+    height: 150px;
+    background-color:red;
+    border: 3px solid black;
+}
+
+/* Child Element
+   Width is 50% of the parent width */
+.child-box {
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+.outer-box {
+    font-size: 2rem;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.inner-box {
+    font-size: 2em;
+    background-color: rgb(83, 217, 83);
+    padding: 20px;
+}
+
+.viewport-box {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(60, 181, 164);
+}
